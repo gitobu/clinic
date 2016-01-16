@@ -1,0 +1,117 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 12, 2015, 6:31:35 AM
+    Author     : Gitobu
+*/
+
+/* CSS Document */
+body {margin: 8pt;
+	background-color: #ffffff}
+	
+p {font-family: Verdana, Garamond;
+	font-size:11pt}
+	
+
+a:link {color:#03F}
+/*a:visited {color:#F0C}*/
+
+table {font-family: Verdana, Garamond;
+		font-size:10pt;
+		border-color: #6d6f7b;
+		border-style:double;}
+		
+input.myButton {width: 100px;} 
+		
+th { background-color:lightseagreen;
+	color:black;
+	text-align:left}
+	
+tr { background-color:white;
+	color:black;
+	text-align:left}
+	
+caption {font-style: 8pt;
+	font-style:normal}
+#menu{
+                 width: 550px;
+                 height: 35px;
+                 font-size: 16px;
+                 font-family: Tahoma, Geneva, sans-serif;
+                 font-weight: bold;
+                 text-align: center;
+                 text-shadow: 3px 2px 3x #333333;
+                 background-color: #9F6;
+                 border-radius: 8px;
+             } 
+             #menu ul{
+                 height: auto;
+                 padding: 8px 0px;
+                 margin: 0px;
+             }
+             #menu li{
+               display: inline;
+               padding: 20px;
+             }
+             #menu a{
+                 text-decoration: none;
+                 color: #00F;
+                 padding: 8px 8px 8px 8px;
+             }
+             #menu a:hover{
+                 color:#F90;
+                 background-color: #FFF;
+             }  
+             #header {
+                background-color:lightseagreen;
+                color:white;
+                text-align:center;
+                padding:5px;
+            }
+            #nav {
+            line-height:30px;
+            background-color:#eeeeee;
+            height:300px;
+            width:120px;
+            float:left;
+            padding:5px; 
+            }
+            #nav ul{
+                 height: auto;
+                 padding: 8px 0px;
+                 margin: 0px;
+             }
+             #nav li{
+               display: inline;
+               padding: 20px;
+             }
+             #nav a{
+                 text-decoration: none;
+                 color: #00F;
+                 padding: 8px 8px 8px 8px;
+             }
+             #nav a:hover{
+                 color:#F90;
+                 background-color: #FFF;
+             }  
+            #section {
+                
+                float:left;
+                 padding:10px; 
+            }
+            #mytabs {
+                
+                float:right;
+                 padding:10px; 
+            }
+            #footer {
+                background-color: lightseagreen;
+               
+                 color:white;
+                clear:both;
+                text-align:center;
+                 padding:5px; 
+            }
