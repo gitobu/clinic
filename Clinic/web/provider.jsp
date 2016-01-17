@@ -53,8 +53,8 @@
         <c:set var="provider_id" value = "${param.provider_id}"/>
            
         <sql:query dataSource="${snapshot}" var="pr_data">
-        SELECT pr.provider_id, pr.provider_no, pr.first_name, pr.last_name, pr.job_title_id
-        FROM provider pr 
+        SELECT pr.provider_id, pr.provider_no, pr.first_name, pr.last_name, pr.job_title_id, jt.job_title
+        FROM provider pr inner join job_title jt on pr.job_title_id = jt.job_title_id
         WHERE pr.provider_id = ${provider_id}
         </sql:query>
         
@@ -64,7 +64,7 @@
         <c:set var="first_name" value = "${row.first_name}"/>
         <c:set var="last_name" value = "${row.last_name}"/>
         <c:set var="job_title_id" value = "${row.job_title_id}"/>
-    
+         <c:set var="job_title" value = "${row.job_title}"/>
 
         </c:forEach> 
 
@@ -119,7 +119,7 @@
              
                       
                       <c:when test='${edit_mode}'>   
-                 <option value="<%= pr.getJob_title_id() %>">[Please select job title]</option>
+                 <option value="<%= pr.getJob_title_id() %>"> ${job_title}  </option>
               </c:when>
              <c:when test='${new_mode}'>
                  <option value="">[Please select job title]</option>
